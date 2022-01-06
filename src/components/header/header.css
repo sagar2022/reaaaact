@@ -16,6 +16,7 @@ hero-section
 
 .hero {
     background-color: var(--background-color);
+    margin-left: 2rem;
   }
 
 .hero .underline {
@@ -40,6 +41,7 @@ hero-section
 
 .hero-info h1 {
     color: #fff;
+    line-height: 85px;
 }
 
 .hero-info .typing{
@@ -124,13 +126,16 @@ hero-section
         position: absolute;
         width: 100%;
         height: 100%;
-        border: .25rem solid #fff;
-        top: 2rem;
-        right: -2rem;
+        /* border: .25rem solid #fff; */
+        background-color: rgba(179, 179, 179, 0.733);
+        /* top: 1rem; */
+        right: -.5rem;
+        transform: rotate(7deg);
         border-radius: var(--radius);
     }
 
-    .hero-photo {
+    .hero-photo,
+    .about-img {
         max-width: 25rem;
         max-height: 30rem;
         -o-object-fit: cover;
@@ -139,3 +144,68 @@ hero-section
         position: relative;
       }
 }
+
+/* 
+===========
+About. 
+===========
+. */
+
+.about-title h2{
+    text-align: left;
+    margin-bottom: 2rem;
+    color: #fff;
+  }
+  .about-title .underline {
+    margin-left: 0;
+  }
+  .about-info p{
+      color: #fff;
+  }
+  .about-info h2{
+    text-align: center;
+  }
+
+  .about-info .underline {
+    margin: 0 auto;
+  }
+  .about-center {
+    display: grid;
+    gap: 3rem 2rem;
+  }
+  .about-img {
+    justify-self: center;
+    max-width: 400px;
+    min-width: 300px;
+  }
+  .about-img img {
+      border-radius: var(--radius);
+  }
+  @media screen and (min-width: 992px) {
+    .about-center {
+      grid-template-columns: 1fr 1fr;
+    }
+    .about-img {
+      position: relative;
+      width: 350px;
+    }
+    .about-img::before {
+      left: -.5rem;
+      transform: rotate(-7deg);
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+    
+    .about-info {
+      align-self: center;
+    }
+    
+    .about-info h2{
+      text-align: left;
+    }
+  
+    .about-info .underline {
+      margin: 0;
+    }
+  }

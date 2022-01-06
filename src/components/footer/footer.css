@@ -1,0 +1,28 @@
+.footer {
+    border-top: 1px solid rgb(92, 92, 92);
+    padding-bottom: 1.6rem;
+    background: transparent;
+    display: grid;
+    place-items: center;
+}
+
+.footer .icons {
+    margin: 1rem 0;
+    display: flex;
+}
+
+.footer .icon{
+    padding: 1rem;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.footer .icon:hover {
+    color: pink;
+}
+
+.footer p {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    color: #fff;
+}

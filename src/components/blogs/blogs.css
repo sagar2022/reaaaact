@@ -1,0 +1,101 @@
+.card {
+    height: 27rem;
+    position: relative;
+    -webkit-perspective: 1500px;
+    perspective: 1500px;
+}
+
+.card-side {
+    transition: all 2s linear;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--radius);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+}
+
+.card-front {
+    background: rgba(63, 71, 87, 0.89);
+}
+.card-back {
+    background: rgba(84, 96, 117, 0.801);
+    transform: rotateY(-180deg);
+    display: grid;
+    place-items: center;
+}
+
+.card:hover .card-front {
+    transform: rotateY(-180deg);
+}
+
+.card:hover .card-back {
+    transform: rotateY(0);
+}
+
+.card-info {
+    padding: 1rem 1.5rem;
+    color: #fff;
+}
+
+.card-front img {
+    height: 13rem;
+    object-fit: cover;
+    border-top-right-radius: var(--radius);
+}
+
+.card-footer {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+
+.card-footer img {
+    width: 2rem;
+    height: 2rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.card-footer p {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    justify-self: end;
+    color: rgb(255, 255, 255);
+    font-size: .85rem;
+}
+
+.blog-center {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    gap: 3rem 1rem;
+}
+
+.blogs-btn-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;  
+}
+
+.blogs-btn {
+    text-decoration: none;
+    width: 150px;
+    color: #000;
+    font-size: 1rem;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    padding: .5rem 1rem;
+    text-align: center;
+}
+.blogs-btn:hover {
+    border: 1px solid #fff;
+    background: none;
+    color: #fff;  
+}

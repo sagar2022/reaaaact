@@ -44,8 +44,9 @@
   ===============
   */
   nav {
-    background: repeating-linear-gradient(45deg, #000 0px, #222 1px, #000 3px);
-    box-shadow: 0 5px 15px rgba(70, 70, 70, 0.2);
+    background: transparent;
+    box-shadow: 0 5px 15px rgba(70, 70, 70, 0.226);
+  
   }
   .nav-header {
     display: flex;
@@ -135,6 +136,7 @@
     .social-icons a {
       margin: 0 0.5rem;
       color: hsl(205, 100%, 96%);
+      font-size: 1.3rem;
       transition: all 0.3s linear;
     }
     .social-icons a:hover {
