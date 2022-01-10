@@ -7,25 +7,29 @@ export const latestProject = [
     {
         id: 1,
         img: project1,
-        heading: 'Project',
-        className: 'project-1'
+        heading: 'React News App',
+        className: 'project-1',
+        url: 'https://github.com/sagar2022/React-News-App'
     },
     {
         id: 2,
         img: project2,
-        heading: 'Project',
-        className: 'project-2'
+        heading: 'React-Weather-App',
+        className: 'project-2',
+        url: 'https://github.com/sagar2022/react-weather-app'
     },
     {
         id: 3,
         img: project3,
         heading: 'Project',
-        className: 'project-3'
+        className: 'project-3',
+        url: 'https://github.com/sagar2022/React-News-App'
     },
     {
         id: 4,
         img: project4,
         heading: 'Project',
-        className: 'project-4'
+        className: 'project-4',
+        url: 'https://github.com/sagar2022/React-News-App'
     },
 ];

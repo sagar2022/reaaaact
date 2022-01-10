@@ -19,9 +19,9 @@ const LatestWork = () => {
             <div className="section-center projects-center">
                 {
                     latestProject.map((link) => {
-                        const { id, img, heading, className } = link;
+                        const { id, img, heading, className, url } = link;
                         return (
-                            <a href="projects.html" className={className} key={id}>
+                            <a href={url} className={className} key={id}>
                                 <article className="project">
                                     <img
                                     src={img}
