@@ -20,8 +20,8 @@ const Header = () => {
                         <div className="underline"></div>
                         <h1>I'm Sagar Chaudhary</h1>
                         <h4 className="typing"></h4>
-                        <a href="./components/cv/Resume-new.pdf" download className="btn hero-btn">Download CV</a>
-                        <Link to="/contact" className="btn hero-btn">Hire Me</Link>
+                        <a href="./components/cv/Resume-new.pdf" download className="btn download-btn">Download CV</a>
+                        <Link to="/contact" className="btn hire-btn">Hire Me</Link>
                     </article>
                     <article className="hero-img">
                         <img src={sagar2} className="hero-photo" alt="sagar chaudhary" />

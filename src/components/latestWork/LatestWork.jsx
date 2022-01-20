@@ -38,7 +38,7 @@ const LatestWork = () => {
                 }
             </div>
             <div className="project-btn-wrapper">
-                <Link to='/portfolio' className='project-btn'>See More  &#8594;</Link>
+                <Link to='/portfolio' className='project-btn'>See More<span></span></Link>
             </div>
         </section>
         </>
