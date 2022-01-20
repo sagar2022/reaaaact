@@ -120,3 +120,12 @@
     color: #111;
    }
    
+
+   .hero-btn {
+       border: 3px solid #fff;
+       padding: .8rem 1.2rem;
+       color: #fff;
+       border-radius: 2px;
+   }
+
+   
